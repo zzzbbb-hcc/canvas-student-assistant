@@ -1,4 +1,4 @@
-# Student Assistant
+# Canvas Student Assistant
 
 [English](README.md) | **简体中文**
 
@@ -8,7 +8,7 @@ Windows 本地桌面学习助手，使用 Python 3.12、PySide6、Canvas 官方�
 
 ## 下载 Windows 便携版
 
-不需要安装 Python。[直接下载 Windows 64 位便携版](https://github.com/zzzbbb-hcc/student-assistant/releases/download/v0.1.0/StudentAssistant-v0.1.0-windows-x64.zip)，或前往 [GitHub Releases](https://github.com/zzzbbb-hcc/student-assistant/releases/latest)。完整解压后运行 `StudentAssistant\StudentAssistant.exe`。请保留同目录的 `_internal` 和 `models`，不能只复制 EXE。GitHub 自动生成的 `Source code` 压缩包是源码，不是可直接运行的软件包。
+不需要安装 Python。[直接下载 Windows 64 位便携版](https://github.com/zzzbbb-hcc/canvas-student-assistant/releases/download/v0.1.0/StudentAssistant-v0.1.0-windows-x64.zip)，或前往 [GitHub Releases](https://github.com/zzzbbb-hcc/canvas-student-assistant/releases/latest)。完整解压后运行 `StudentAssistant\StudentAssistant.exe`。请保留同目录的 `_internal` 和 `models`，不能只复制 EXE。GitHub 自动生成的 `Source code` 压缩包是源码，不是可直接运行的软件包。
 
 适用于 Windows 10/11 64 位。当前版本内置悉尼大学 Canvas 地址；每位使用者需要在 Settings 配置自己的 Canvas Personal Access Token，可选 ChatGPT 连接也需要自行登录和授权。发布包不包含作者保存的 Canvas Token、AI Key、OAuth 凭据、个人数据库、课程缓存、聊天记录或界面截图。下载页提供 `SHA256SUMS.txt` 用于核对 ZIP 文件。
 
@@ -71,7 +71,8 @@ dist\StudentAssistant\StudentAssistant.exe
 环境要求：Windows 10/11、Python 3.12 或更高版本。
 
 ```powershell
-cd student-assistant
+git clone https://github.com/zzzbbb-hcc/canvas-student-assistant.git
+cd canvas-student-assistant
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip

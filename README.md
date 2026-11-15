@@ -1,10 +1,10 @@
 English | [简体中文](README.zh-CN.md)
 
-# Student Assistant
+# Canvas Student Assistant
 
 A local Windows desktop companion for Canvas courses, assignments, quizzes, announcements and deadlines. Built with Python and PySide6, with read-only access through the official Canvas API.
 
-**[Download for Windows x64](https://github.com/zzzbbb-hcc/student-assistant/releases/download/v0.1.0/StudentAssistant-v0.1.0-windows-x64.zip)** · [Latest release and checksums](https://github.com/zzzbbb-hcc/student-assistant/releases/latest)
+**[Download for Windows x64](https://github.com/zzzbbb-hcc/canvas-student-assistant/releases/download/v0.1.0/StudentAssistant-v0.1.0-windows-x64.zip)** · [Latest release and checksums](https://github.com/zzzbbb-hcc/canvas-student-assistant/releases/latest)
 
 ## Quick start
 
@@ -151,8 +151,8 @@ For implementation boundaries and safe reporting guidance, see [SECURITY.md](SEC
 Requirements: Windows 10/11 and Python 3.12 or later.
 
 ```powershell
-git clone https://github.com/zzzbbb-hcc/student-assistant.git
-cd student-assistant
+git clone https://github.com/zzzbbb-hcc/canvas-student-assistant.git
+cd canvas-student-assistant
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
