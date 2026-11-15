@@ -1,0 +1,2 @@
+"""Student Assistant desktop application."""
+

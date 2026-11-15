@@ -1,0 +1,11 @@
+PySide6>=6.7,<7
+httpx>=0.27,<1
+keyring>=25,<26
+pydantic>=2.7,<3
+ctranslate2>=4.6,<5
+sentencepiece>=0.2,<0.3
+PyJWT[crypto]>=2.10,<3
+pypdf>=6.21,<7
+pytest>=8,<9
+pytest-qt>=4.4,<5
+
