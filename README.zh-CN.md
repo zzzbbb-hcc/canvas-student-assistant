@@ -28,6 +28,28 @@ Windows 本地桌面学习助手，使用 Python 3.12、PySide6、Canvas 官方�
 
 根据当前产品决定，Ed Discussion 和 Ed Lessons 不包含在此版本中。
 
+## 演示截图
+
+截图为真实应用界面，使用完全虚构的演示课程、作业、测验及固定演示日期，不展示个人账号、真实课程内容或已保存的凭据。当前界面混合使用英文和简体中文。
+
+### 首页
+
+集中查看演示课程与近期截止事项。
+
+![首页：仅展示虚构课程与演示截止事项](docs/images/demo-dashboard.png)
+
+### 课程
+
+紧凑列表展示虚构课程。
+
+![课程列表：全部为虚构演示课程](docs/images/demo-courses.png)
+
+### 截止中心
+
+以本地时间查看演示作业与测验的截止时间。
+
+![截止中心：仅展示虚构作业与测验](docs/images/demo-deadlines.png)
+
 ## 最快启动方式
 
 下载并完整解压便携版 ZIP 后，双击 `StudentAssistant\StudentAssistant.exe` 即可启动。每位使用者需要配置自己的账户；发布包不预置任何人的登录凭据或课程数据。

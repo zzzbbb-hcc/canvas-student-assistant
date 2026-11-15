@@ -30,6 +30,28 @@ The portable release runs on **Windows 10/11, 64-bit (x64)** and does not requir
 
 Canvas access is read-only. The app does not start quizzes, read quiz questions, submit answers or modify course content. Ed Discussion and Ed Lessons are not included in this release.
 
+## Screenshots
+
+These screenshots show the actual application with fictional demo courses, assignments, quizzes and a fixed demo date. They contain no personal accounts, real course content or saved credentials. The interface combines English and Simplified Chinese.
+
+### Dashboard
+
+Demo courses and upcoming deadlines at a glance.
+
+![Dashboard with fictional demo courses and upcoming deadlines](docs/images/demo-dashboard.png)
+
+### Courses
+
+Browse a compact list of fictional courses.
+
+![Course list populated only with fictional demo courses](docs/images/demo-courses.png)
+
+### Deadline Center
+
+Sample assignment and quiz deadlines in local time.
+
+![Deadline Center showing fictional assignments and quizzes](docs/images/demo-deadlines.png)
+
 ## Connect Canvas
 
 1. Sign in to your university's Canvas website.
