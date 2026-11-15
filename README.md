@@ -2,6 +2,14 @@
 
 Windows 本地桌面学习助手，使用 Python 3.12、PySide6、Canvas 官方只读 API、Windows Credential Manager 和 SQLite。
 
+## 下载 Windows 便携版
+
+不需要安装 Python。前往 [GitHub Releases](https://github.com/zzzbbb-hcc/student-assistant/releases/latest)，下载 `StudentAssistant-v0.1.0-windows-x64.zip`，完整解压后运行 `StudentAssistant\StudentAssistant.exe`。请保留同目录的 `_internal` 和 `models`，不能只复制 EXE。GitHub 自动生成的 `Source code` 压缩包是源码，不是可直接运行的软件包。
+
+适用于 Windows 10/11 64 位。当前版本内置悉尼大学 Canvas 地址；每位使用者需要在 Settings 配置自己的 Canvas Personal Access Token，可选 ChatGPT 连接也需要自行登录和授权。发布包不包含作者保存的 Canvas Token、AI Key、OAuth 凭据、个人数据库、课程缓存、聊天记录或界面截图。下载页提供 `SHA256SUMS.txt` 用于核对 ZIP 文件。
+
+## 功能
+
 当前版本包括：
 
 - Canvas 课程、作业、公告、Pages、Modules 与课件预览

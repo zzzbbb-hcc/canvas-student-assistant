@@ -24,6 +24,9 @@ BASE_TIME = datetime(2026, 11, 1, 2, 37, tzinfo=timezone.utc)
 
 @pytest.fixture
 def styled_window(qtbot, monkeypatch):
+    # List ordering in these fixtures assumes the dated work is upcoming.
+    monkeypatch.setattr("app.ui.assignments.DeadlineService",
+                        lambda: DeadlineService(now=BASE_TIME - timedelta(days=2)))
     class Store:
         def has_canvas_token(self):
             return False

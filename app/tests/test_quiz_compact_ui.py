@@ -7,6 +7,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QLabel
 
 from app.models.assignment import Assignment
+from app.services.deadline_service import DeadlineService
 from app.storage.cache import Cache
 from app.storage.database import SQLiteDatabase
 from app.storage.session_cache import session_cache
@@ -22,7 +23,10 @@ BASE_TIME = datetime(2026, 11, 1, 2, 37, tzinfo=timezone.utc)
 
 
 @pytest.fixture(autouse=True)
-def clean_session_cache():
+def clean_session_cache(monkeypatch):
+    # Keep the dated fixture tasks in the future regardless of today's date.
+    monkeypatch.setattr("app.ui.assignments.DeadlineService",
+                        lambda: DeadlineService(now=BASE_TIME - timedelta(days=2)))
     session_cache.clear()
     yield
     session_cache.clear()

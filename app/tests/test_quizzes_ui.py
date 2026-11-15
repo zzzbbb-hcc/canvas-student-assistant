@@ -20,7 +20,11 @@ BASE_TIME = datetime(2026, 11, 1, 2, 37, tzinfo=timezone.utc)
 
 
 @pytest.fixture(autouse=True)
-def clean_session_cache():
+def clean_session_cache(monkeypatch):
+    # These fixtures describe future work; wall-clock passage must not turn
+    # them into overdue items and change the ordering under test.
+    monkeypatch.setattr("app.ui.assignments.DeadlineService",
+                        lambda: DeadlineService(now=BASE_TIME - timedelta(days=2)))
     session_cache.clear()
     yield
     session_cache.clear()
